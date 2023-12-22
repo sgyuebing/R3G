@@ -13,11 +13,3 @@ config conf 'common'
 	option token '12345'
 	option server_addr '121.36.228.193'
 
-config conf 'MMDVM_4G'
-	option use_encryption 'false'
-	option use_compression 'false'
-	option local_ip '192.168.8.1'
-	option local_port '80'
-	option type 'tcp'
-	option remote_port '8188'
-
