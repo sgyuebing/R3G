@@ -15,7 +15,7 @@ config uplink
 	option ssid 'AXR'
 	option con_start_expiry '0'
 	option con_end_expiry '0'
-	option con_start '2023.12.27-11:48:53'
+	option con_start '2023.12.27-14:58:54'
 
 config uplink
 	option enabled '1'
