@@ -1,0 +1,48 @@
+
+config system
+	option ttylogin '0'
+	option log_size '64'
+	option urandom_seed '0'
+	option compat_version '1.1'
+	option timezone 'CST-8'
+	option zonename 'Asia/Shanghai'
+	option hostname 'Newifi-D1'
+	option log_proto 'udp'
+	option conloglevel '8'
+	option cronloglevel '5'
+	option description 'MMDVM路由热点'
+	option notes 'MMDVM路由热点固件由BI4PCS打包，感谢BD7MQB老师的源码。'
+
+config timeserver 'ntp'
+	list server 'ntp.tencent.com'
+	list server 'ntp1.aliyun.com'
+	list server 'ntp.ntsc.ac.cn'
+	list server 'cn.ntp.org.cn'
+
+config led
+	option name 'WAN'
+	option sysfs 'green:status'
+	option trigger 'netdev'
+	option dev 'wan'
+	list mode 'link'
+	list mode 'tx'
+	list mode 'rx'
+
+config led
+	option sysfs 'red:status'
+	option trigger 'netdev'
+	list mode 'link'
+	list mode 'tx'
+	list mode 'rx'
+	option dev 'wlan1'
+	option name '无线桥接5G'
+
+config led
+	option name '无线桥接2.4G'
+	option sysfs 'blue:status'
+	option trigger 'netdev'
+	list mode 'link'
+	list mode 'tx'
+	list mode 'rx'
+	option dev 'wlan0'
+
