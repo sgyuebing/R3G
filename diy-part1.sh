@@ -21,4 +21,4 @@ sed -i '$a src-git mmdvm https://github.com/sgyuebing/mmdvm-openwrt' feeds.conf.
 #sed -i '$a src-git mmdvm https://github.com/lazywalker/mmdvm-openwrt' feeds.conf.default
 sed -i '$a src-git devtools https://github.com/lazywalker/devtools-feeds' feeds.conf.default
 sed -i '$a src-git luci https://github.com/immortalwrt/luci' feeds.conf.default
-sed -i '$a src-git routing https://github.com/openwrt/routing' feeds.conf.default
+#sed -i '$a src-git routing https://github.com/openwrt/routing' feeds.conf.default
