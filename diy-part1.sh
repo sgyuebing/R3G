@@ -17,10 +17,8 @@
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git Aibx https://github.com/Aibx/openwrt-packages' feeds.conf.default
 sed -i '$a src-git immortalwrt https://github.com/immortalwrt/packages' feeds.conf.default
-sed -i '$a src-git luci https://github.com/immortalwrt/luci' feeds.conf.default
-sed -i '$a src-git routing https://github.com/openwrt/routing' feeds.conf.default
-sed -i '$a src-git telephony https://github.com/openwrt/telephony' feeds.conf.default
 sed -i '$a src-git mmdvm https://github.com/sgyuebing/mmdvm-openwrt' feeds.conf.default
 #sed -i '$a src-git mmdvm https://github.com/lazywalker/mmdvm-openwrt' feeds.conf.default
 sed -i '$a src-git devtools https://github.com/lazywalker/devtools-feeds' feeds.conf.default
-#sed -i '$a src-git dvb https://github.com/qzyuebing/DVB-For-Openwrt' feeds.conf.default
+sed -i '$a src-git luci https://github.com/immortalwrt/luci' feeds.conf.default
+sed -i '$a src-git routing https://github.com/openwrt/routing' feeds.conf.default
