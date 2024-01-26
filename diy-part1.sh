@@ -23,4 +23,4 @@ sed -i '$a src-git telephony https://github.com/openwrt/telephony' feeds.conf.de
 sed -i '$a src-git mmdvm https://github.com/sgyuebing/mmdvm-openwrt' feeds.conf.default
 #sed -i '$a src-git mmdvm https://github.com/lazywalker/mmdvm-openwrt' feeds.conf.default
 sed -i '$a src-git devtools https://github.com/lazywalker/devtools-feeds' feeds.conf.default
-sed -i '$a src-git dvb https://github.com/qzyuebing/DVB-For-Openwrt' feeds.conf.default
+#sed -i '$a src-git dvb https://github.com/qzyuebing/DVB-For-Openwrt' feeds.conf.default
