@@ -10,5 +10,11 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Modify default IP
-sed -i 's/192.168.1.1/192.168.1.1/g' package/base-files/files/bin/config_generate
+###### Modify default IP
+sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generate
+
+###### Modify hostname
+sed -i 's/OpenWrt/NewifiD1/g' package/base-files/files/bin/config_generate
+
+####### Set argon as default theme
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
