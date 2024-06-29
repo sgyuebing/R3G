@@ -1,0 +1,9 @@
+
+config udpxy
+	option port '4020'
+	option disabled '0'
+	option max_clients '60'
+	option respawn '1'
+	option bind 'br-lan'
+	option source 'lan3'
+
