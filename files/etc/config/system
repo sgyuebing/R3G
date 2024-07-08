@@ -1,0 +1,36 @@
+
+config system
+	option ttylogin '0'
+	option log_size '64'
+	option urandom_seed '0'
+	option compat_version '1.1'
+	option timezone 'CST-8'
+	option zonename 'Asia/Shanghai'
+	option hostname 'IPTV&MMDVM'
+	option log_proto 'udp'
+	option conloglevel '8'
+	option cronloglevel '5'
+	option description 'IPTV&MMDVM'
+	option notes 'IPTV转发服务器'
+
+config timeserver 'ntp'
+	list server 'ntp.tencent.com'
+	list server 'ntp1.aliyun.com'
+	list server 'ntp.ntsc.ac.cn'
+	list server 'cn.ntp.org.cn'
+
+config led
+	option name 'SDYX'
+	option sysfs 'red:system'
+	option trigger 'netdev'
+	option dev 'lan3'
+	list mode 'rx'
+
+config led
+	option name 'DX IPTV'
+	option sysfs 'white:status'
+	option trigger 'netdev'
+	option dev 'lan2'
+	list mode 'link'
+	list mode 'rx'
+
