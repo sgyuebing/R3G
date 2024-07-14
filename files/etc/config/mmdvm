@@ -33,10 +33,10 @@ config mmdvmhost 'General'
 	option RFModeHang '10'
 
 config mmdvmhost 'Modem'
-	option Port '/dev/ttyUSB0'
 	option RXOffset '0'
 	option TXOffset '0'
 	option RSSIMappingFile '/etc/mmdvm/RSSI.dat'
+	option Port 'NullModem'
 
 config mmdvmhost 'DStar_Network'
 	option Enable '0'
@@ -74,9 +74,9 @@ config mmdvmhost 'System_Fusion_Network'
 	option Enable '1'
 
 config ysfgateway 'YSFG_Network'
-	option Startup 'CN-C4FM'
 	option Revert '1'
 	option InactivityTimeout '30'
+	option Startup 'CN-BI4PCS'
 
 config p25gateway 'P25G_Network'
 	option Startup '10403'
