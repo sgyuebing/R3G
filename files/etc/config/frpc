@@ -1,7 +1,0 @@
-
-config init
-	option stdout '1'
-	option stderr '1'
-	option respawn '1'
-	option user 'root'
-	option group 'root'
