@@ -24,10 +24,6 @@ config mmdvmhost 'P25'
 config mmdvmhost 'System_Fusion'
 	option SelfOnly '0'
 	option Enable '1'
-	
-	config mmdvmhost 'ysf2dmr'
-	option SelfOnly '0'
-	option Enable '1'
 
 config mmdvmhost 'General'
 	option Callsign 'BI4PCS'
