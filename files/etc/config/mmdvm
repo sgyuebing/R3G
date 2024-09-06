@@ -25,6 +25,11 @@ config mmdvmhost 'System_Fusion'
 	option SelfOnly '0'
 	option Enable '1'
 
+config mmdvmhost 'mmdvm-crossmode'
+	option SelfOnly '0'
+	option Enable '1'
+
+
 config mmdvmhost 'General'
 	option Callsign 'BI4PCS'
 	option Id '4603321'
